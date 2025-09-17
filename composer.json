@@ -1,0 +1,34 @@
+{
+    "name": "directam/elastic-logger",
+    "description": "Reusable Laravel custom log channel for Elasticsearch (ELK) using Monolog.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Directam",
+            "email": "dev@chatbooster.io"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^10.0 || ^11.0 || ^12.0",
+        "elasticsearch/elasticsearch": "^9.0",
+        "monolog/monolog": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Directam\\ElasticLogger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Directam\\ElasticLogger\\ElasticLoggerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
+
